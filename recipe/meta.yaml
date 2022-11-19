@@ -1,5 +1,5 @@
 {% set name = "napari-imsmicrolink" %}
-{% set version = "0.1.7" %}
+{% set version = "0.1.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-imsmicrolink-{{ version }}.tar.gz
-  sha256: bec6e483b6704a0fe604413dbdbd541117d7f6ca3b0e0132653ae3a687856d2a
+  sha256: 17e502620abe89802b93cea455c6eef3cec237828e42568c411cf46aca35237b
 
 build:
   noarch: python
