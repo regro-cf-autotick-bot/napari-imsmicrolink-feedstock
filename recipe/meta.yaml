@@ -20,19 +20,21 @@ requirements:
     - python >=3.7
   run:
     - aicsimageio
-    - bioformats_jar
     - czifile
     - dask-core
     - h5py
-    - imagecodecs
+    - lxml
     - napari
     - napari-plugin-engine
     - numpy
+    - ome-types
     - opencv
     - pandas
+    - pint
     - python >=3.7
     - qtpy
     - simpleitk
+    - superqt
     - tifffile
     - zarr >=2.10.3
 
