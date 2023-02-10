@@ -1,13 +1,15 @@
 About napari-imsmicrolink
 =========================
 
-Home: https://github.com/nhpatterson/napari-imsmicrolink
+Home: https://pypi.org/project/napari-imsmicrolink/
 
 Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-imsmicrolink-feedstock/blob/main/LICENSE.txt)
 
 Summary: Plugin to perform IMS to microscopy registration using laser ablation marks.
+
+Development: https://github.com/nhpatterson/napari-imsmicrolink
 
 Current build status
 ====================
