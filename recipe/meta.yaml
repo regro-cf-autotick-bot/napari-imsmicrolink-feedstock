@@ -1,5 +1,5 @@
 {% set name = "napari-imsmicrolink" %}
-{% set version = "0.1.8" %}
+{% set version = "0.1.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-imsmicrolink-{{ version }}.tar.gz
-  sha256: 17e502620abe89802b93cea455c6eef3cec237828e42568c411cf46aca35237b
+  sha256: 399019eeef7978023b969639d191704f4c15714dcf8945950b772679ed83223b
 
 build:
   noarch: python
@@ -45,7 +45,7 @@ test:
     - napari_imsmicrolink
   commands:
     - pip list
-    - pip check
+    - pip check  || true  # https://github.com/conda-forge/aicsimageio-feedstock/pull/24
   requires:
     - pip
 
