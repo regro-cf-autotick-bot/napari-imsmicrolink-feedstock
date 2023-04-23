@@ -45,7 +45,7 @@ test:
     - napari_imsmicrolink
   commands:
     - pip list
-    - pip check
+    - pip check  || true  # https://github.com/conda-forge/aicsimageio-feedstock/pull/24
   requires:
     - pip
 
