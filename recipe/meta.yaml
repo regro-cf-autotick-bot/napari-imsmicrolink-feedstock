@@ -6,18 +6,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-imsmicrolink-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/napari-imsmicrolink-{{ version }}.tar.gz
   sha256: 399019eeef7978023b969639d191704f4c15714dcf8945950b772679ed83223b
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - aicsimageio
     - bioformats_jar
@@ -33,7 +33,7 @@ requirements:
     - opencv
     - pandas
     - pint
-    - python >=3.7
+    - python >={{ python_min }}
     - qtpy
     - simpleitk
     - superqt
@@ -48,6 +48,7 @@ test:
     - pip check  || true  # https://github.com/conda-forge/aicsimageio-feedstock/pull/24
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/napari-imsmicrolink/
